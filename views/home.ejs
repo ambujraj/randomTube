@@ -1,0 +1,36 @@
+<% include partials/header %>
+<style>
+    body{
+        background-color: #1c262f;
+    }
+    input[type=text]{
+         
+        /*color: white;
+        box-sizing: border-box; */
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+    }
+    input::placeholder{
+        color: white;
+    }
+</style>
+    <div class="container" style="margin: 12% auto;width: 50%;">
+    <form action="/result" method="GET">
+    <div class="form-group">
+        <input  type="text" name="user" placeholder="Enter YouTuber's Name..." autofocus>
+    </div>
+    <div class="form-group">
+        <input type="submit" class="form-control btn btn-block btn-info" value="Search">
+    </div>
+    <div>
+        <p style="text-align: center;color: grey;">Made with &#9829; by Ambuj</p>
+    </div>
+
+    </form>
+</div>
+<% include partials/footer %>
