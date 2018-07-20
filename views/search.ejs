@@ -1,29 +1,5 @@
 <% include partials/header %>
-<style>
-    iframe {
-        width: 43vw;
-        height: 24vw;
-    }
-    body{
-        background-color: #1c262f;
-    }
-    input[type=text]{
-         
-        /*color: white;
-        box-sizing: border-box; */
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    background-color: #3CBC8D;
-    color: white;
-    }
-    input::placeholder{
-        color: white;
-    }
-    </style>
-    <div class="container" style="margin: 5% auto;width: 60%;">
+    <div class="container" id="one">
         <form action="/result" method="GET">
             <div class="form-group">
                 <input type="text" name="user" placeholder="Enter YouTuber's Name..." autofocus>
@@ -42,7 +18,7 @@
            <div class="container">
             <iframe class="embed-responsive-item" src="<%= embed %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div class="caption">
-            <p style="font-size: 1.2rem;color: white;"><%=search["snippet"]["title"] %></p>
+            <p id="two" style="color: white;"><%=search["snippet"]["title"] %></p>
 
             </div>   
         </div>
