@@ -18,7 +18,7 @@ app.get("/result", function(req, res){
         request(url, function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 var parsed = JSON.parse(body);
-                res.render("search", { search: parsed, amb: "Awesome !!" });
+                res.render("search", { search: parsed});
             }
         });
     }
@@ -27,10 +27,19 @@ app.get("/result", function(req, res){
     request(url, function(error, response, body){
          if(!error && response.statusCode == 200){
              var parsed = JSON.parse(body);
-             res.render("search", {search: parsed, amb: ""});
+             res.render("search", {search: parsed});
          }
     });
 }
+});
+app.get("/trend", function(req, res){
+    var u = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=IN&maxResults=26&key=AIzaSyA58s6f45ex23jhsW0m54CpjhD71a4bJgc';
+    request(u, function(erro, respo, bod){
+        if(!erro && respo.statusCode == 200){
+            var pars = JSON.parse(bod);
+            res.render("trend", {bod: pars});
+        }
+    })
 });
 app.get("*", function(req, res){
         res.redirect("/");
