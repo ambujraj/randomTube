@@ -10,6 +10,7 @@ app.get("/", function(req, res){
 });
 app.get("/result", function(req, res){
     var query = req.query.user;
+    console.log(query);
     var ab = query.split(" ");
     query = ab.join("+");
     if(query=="ambuj+raj"|| query=="Ambuj+Raj"|| query=="ambuj" || query=="Ambuj" || query=="ambujraj"){
@@ -35,5 +36,5 @@ app.get("*", function(req, res){
         res.redirect("/");
 });
 app.listen(process.env.PORT || 80, function(){
-  console.log("Server Started");
+  console.log("Seached Queries are:");
 });
