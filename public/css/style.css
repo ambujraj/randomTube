@@ -18,15 +18,17 @@ body{
         height: 48vw;
     }
     #one{
-        margin: 5% auto;
-        width: 78%;
+        margin-top: 25%;
     }
     #two{
     font-size: 10px;
     }
     #three{
-        margin: 26% auto;
+        margin: 34% auto;
         width: 78%;
+    }
+    #four{
+        width: 100%;
     }
     input[type=text]{
     width: 100%;
@@ -44,15 +46,17 @@ body{
     height: 48vw;
     }
     #one{
-        margin: 5% auto;
-        width: 78%;
+        margin-top: 20%;
     }
     #two{
     font-size: 10px;
 }
     #three{
-        margin: 36% auto;
+        margin: 31% auto;
         width: 80%;
+    }
+    #four{
+        width: 100%;
     }
     input[type=text]{
     width: 100%;
@@ -70,15 +74,17 @@ body{
     height: 48vw;
     }
     #one{
-        margin: 5% auto;
-        width: 78%;
+        margin-top: 15%;
     }
     #two{
     font-size: 10px;
 }
     #three{
-        margin: 26% auto;
+        margin: 20% auto;
         width: 78%;
+    }
+    #four{
+        width: 100%;
     }
     input[type=text]{
     width: 100%;
@@ -96,8 +102,7 @@ body{
     height: 24vw;
     }
     #one{
-        margin: 5% auto;
-        width: 78%;
+        margin-top: 10%;
     }
     #two{
     font-size: 10px;
@@ -105,6 +110,12 @@ body{
     #three{
         margin: 34% auto;
         width: 80%;
+    }
+    #four{
+        width: 80%;
+    }
+    #five{
+        
     }
     input[type=text]{
     width: 100%;
@@ -118,15 +129,17 @@ body{
 }
 @media screen and (min-width: 769px){
     #one{
-        margin: 5% auto;
-        width: 60%;
+        margin-top: 10%;
     }
     #two{
         font-size: 1.2rem;
     }
     #three{
-        margin: 12% auto;
+        margin: 15% auto;
         width: 50%;
+    }
+    #four{
+        width: 70%;
     }
     iframe {
         width: 43vw;
