@@ -24,12 +24,13 @@ body{
     font-size: 10px;
     }
     #three{
-        margin: 34% auto;
+        margin: 30% auto;
         width: 78%;
     }
     #four{
         width: 100%;
     }
+    
     input[type=text]{
     width: 100%;
     padding: 12px 20px;
@@ -52,7 +53,7 @@ body{
     font-size: 10px;
 }
     #three{
-        margin: 31% auto;
+        margin: 28% auto;
         width: 80%;
     }
     #four{
@@ -80,7 +81,7 @@ body{
     font-size: 10px;
 }
     #three{
-        margin: 20% auto;
+        margin: 16% auto;
         width: 78%;
     }
     #four{
@@ -108,7 +109,7 @@ body{
     font-size: 10px;
 }
     #three{
-        margin: 34% auto;
+        margin: 30% auto;
         width: 80%;
     }
     #four{
@@ -135,7 +136,7 @@ body{
         font-size: 1.2rem;
     }
     #three{
-        margin: 15% auto;
+        margin: 12% auto;
         width: 50%;
     }
     #four{
