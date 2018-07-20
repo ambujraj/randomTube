@@ -1,16 +1,21 @@
 <% include partials/header %>
-    <div class="container" id="one">
-        <form action="/result" method="GET">
-            <div class="">
-                <input type="text" name="user" placeholder="Enter YouTuber's Name..." autofocus>
-            </div>
-            <div class="">
-                <input type="submit" class="form-control btn btn-block btn-info" value="Search">
-            </div>
-                <p style="text-align: center;color: grey;"><%= amb %></p>
-            </div>
-
-<div style="position: relative;background-color:#1c262f;left: 0;right: 0;padding-top: 2%;" class="container-fluid">
+<nav style="position: fixed;top: 0;right: 0;left: 0;z-index: 200;" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" style="text-decoration: none;color: #45b288;" href="/">randomSearch</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-search"></i>
+        </button>
+        <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"></ul>
+            <form class="form-inline my-2 my-lg-0" action="/result" method="GET">
+                <input id="four" style="padding: 8px 20px;margin: 3px 0;box-sizing: border-box;border: none;background-color: #3CBC8D;color: white;" type="text" name="query" class="form-control mr-sm-2" placeholder="Enter YouTuber's Name...">
+                <input id="five" class="form-control btn btn-info my-2 my-sm-0" type="submit" value="Search">
+            </form>
+        </div>
+</nav>
+    <div style="position: relative;background-color:#1c262f;left: 0;right: 0;padding-top: 2%;" class="container-fluid">
+        <div id="one"></div>
  <div class="row">
     <% search["items"].forEach(function(search){ %>
        <% var embed = 'https://www.youtube.com/embed/'+search.id.videoId+'?rel=0&amp;controls=0&amp;showinfo=0'; %>
