@@ -1,0 +1,144 @@
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+@-ms-viewport {
+    width: device-width;
+}
+body{
+        background-color: #1c262f;
+    }
+    
+    input::placeholder{
+        color: white;
+    }
+@media screen and (max-width: 320px){
+    iframe {
+        width: 83vw;
+        height: 48vw;
+    }
+    #one{
+        margin: 5% auto;
+        width: 78%;
+    }
+    #two{
+    font-size: 10px;
+    }
+    #three{
+        margin: 40% auto;
+        width: 78%;
+    }
+    input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 425px){
+    iframe {
+    width: 83vw;
+    height: 48vw;
+    }
+    #one{
+        margin: 5% auto;
+        width: 78%;
+    }
+    #two{
+    font-size: 10px;
+}
+    #three{
+        margin: 50% auto;
+        width: 80%;
+    }
+    input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 480px){
+    iframe {
+    width: 83vw;
+    height: 48vw;
+    }
+    #one{
+        margin: 5% auto;
+        width: 78%;
+    }
+    #two{
+    font-size: 10px;
+}
+    #three{
+        margin: 40% auto;
+        width: 78%;
+    }
+    input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+       iframe {
+    width: 43vw;
+    height: 24vw;
+    }
+    #one{
+        margin: 5% auto;
+        width: 78%;
+    }
+    #two{
+    font-size: 10px;
+}
+    #three{
+        margin: 48% auto;
+        width: 80%;
+    }
+    input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+}
+}
+@media screen and (min-width: 769px){
+    #one{
+        margin: 5% auto;
+        width: 60%;
+    }
+    #two{
+        font-size: 1.2rem;
+    }
+    #three{
+        margin: 12% auto;
+        width: 50%;
+    }
+    iframe {
+        width: 43vw;
+        height: 24vw;
+    }
+    input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+    }
+}
