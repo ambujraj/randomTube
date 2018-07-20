@@ -12,6 +12,7 @@ body{
     input::placeholder{
         color: white;
     }
+    
 @media screen and (max-width: 320px){
     iframe {
         width: 83vw;
