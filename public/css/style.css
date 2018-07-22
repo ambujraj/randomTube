@@ -29,6 +29,7 @@ body{
     }
     #four{
         width: 100%;
+        padding: 8px 20px;
     }
     
     input[type=text]{
@@ -58,6 +59,7 @@ body{
     }
     #four{
         width: 100%;
+        padding: 8px 20px;
     }
     input[type=text]{
     width: 100%;
@@ -86,6 +88,7 @@ body{
     }
     #four{
         width: 100%;
+        padding: 8px 20px;
     }
     input[type=text]{
     width: 100%;
@@ -114,10 +117,9 @@ body{
     }
     #four{
         width: 80%;
+        padding: 8px 20px;
     }
-    #five{
-        
-    }
+    
     input[type=text]{
     width: 100%;
     padding: 12px 20px;
@@ -141,6 +143,7 @@ body{
     }
     #four{
         width: 70%;
+        padding: 5px 20px;
     }
     iframe {
         width: 43vw;
