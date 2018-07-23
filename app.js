@@ -6,8 +6,11 @@ const mongoose = require('mongoose');
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+var hit=1;
 app.get("/", function(req, res){
    res.render("home");
+   console.log(hit);
+   hit++;
 });
 app.get("/result", function(req, res){
     var queryy = req.query.query;
