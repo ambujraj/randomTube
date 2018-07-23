@@ -9,7 +9,7 @@ app.use(express.static("public"));
 var hit=1;
 app.get("/", function(req, res){
    res.render("home");
-   console.log(hit);
+   console.log("HITS= "+hit);
    hit++;
 });
 app.get("/result", function(req, res){
