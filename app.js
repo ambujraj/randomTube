@@ -49,5 +49,5 @@ app.get("*", function(req, res){
         res.redirect("/");
 });
 app.listen(process.env.PORT || 80, function(){
-  console.log("Seached Queries are:");
+  console.log("Searched Queries are:");
 });

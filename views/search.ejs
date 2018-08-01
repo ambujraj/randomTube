@@ -18,7 +18,7 @@
         <div id="one"></div>
  <div class="row">
     <% search["items"].forEach(function(search){ %>
-       <% var embed = 'https://www.youtube.com/embed/'+search.id.videoId+'?modestbranding=1&amp;fs=0&amp;showinfo=0&amp;rel=0&amp;showinfo=0'; %>
+       <% var embed = 'https://www.youtube.com/embed/'+search.id.videoId+'?&amp;theme=dark&amp;color=white&amp;keyboard=1&amp;autohide=1&amp;cc_load_policy=1&amp;modestbranding=1&amp;fs=0&amp;showinfo=0&amp;rel=0'; %>
        <div class="col-md-6">
            <div class="container">
             <iframe class="embed-responsive-item" src="<%= embed %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
