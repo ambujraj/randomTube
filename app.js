@@ -18,7 +18,7 @@ app.get("/result", function(req, res){
     var ab = queryy.split(" ");
     queryy = ab.join("+");
     if(queryy=="ambuj+raj"|| queryy=="Ambuj+Raj"|| queryy=="ambuj" || queryy=="Ambuj" || queryy=="ambujraj"){
-        var url = 'https://www.googleapis.com/youtube/v3/search?modestbranding=1&part=snippet&channelId=UCNj8krJYML-KG22xyumvMww&order=date&type=video&key=AIzaSyA58s6f45ex23jhsW0m54CpjhD71a4bJgc';
+        var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&modestbranding=1&fs=0&channelId=UCNj8krJYML-KG22xyumvMww&order=date&type=video&key=AIzaSyA58s6f45ex23jhsW0m54CpjhD71a4bJgc';
         request(url, function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 var parsed = JSON.parse(body);
@@ -27,7 +27,7 @@ app.get("/result", function(req, res){
         });
     }
     else{
-    var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&safeSearch=strict&order=relevance&type=video&q=' + queryy +'&key=AIzaSyA58s6f45ex23jhsW0m54CpjhD71a4bJgc';
+    var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&modestbranding=1&fs=0&maxResults=50&safeSearch=strict&order=relevance&type=video&q=' + queryy +'&key=AIzaSyA58s6f45ex23jhsW0m54CpjhD71a4bJgc';
     request(url, function(error, response, body){
          if(!error && response.statusCode == 200){
              var parsed = JSON.parse(body);
