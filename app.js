@@ -1,20 +1,29 @@
+
 const express = require('express');
 const app = express();
 const request = require('request');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+mongoose.connect("mongodb://localhost:27017/queryy", {useNewUrlParser: true});
+var querySchema = new mongoose.Schema({
+	query: String,
+	hits: Number,
+	ip: String
+});
+app.enable('trust proxy');
+var hit = 1;
+var Query = mongoose.model("Query", querySchema);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-var hit=1;
 app.get("/", function(req, res){
    res.render("home");
-   console.log("HITS= "+hit);
-   hit++;
 });
 app.get("/result", function(req, res){
     var queryy = req.query.query;
-    console.log(queryy);
+	
+	var ip= req.ip;
+ Query.create({query: queryy, hits: hit, ip: ip});
     var ab = queryy.split(" ");
     queryy = ab.join("+");
     if(queryy=="ambuj+raj"|| queryy=="Ambuj+Raj"|| queryy=="ambuj" || queryy=="Ambuj" || queryy=="ambujraj"){
@@ -22,6 +31,7 @@ app.get("/result", function(req, res){
         request(url, function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 var parsed = JSON.parse(body);
+		hit++;
                 res.render("search", { search: parsed});
             }
         });
@@ -31,6 +41,7 @@ app.get("/result", function(req, res){
     request(url, function(error, response, body){
          if(!error && response.statusCode == 200){
              var parsed = JSON.parse(body);
+		hit++;
              res.render("search", {search: parsed});
          }
     });
