@@ -59,6 +59,6 @@ app.get("/trend", function(req, res){
 app.get("*", function(req, res){
         res.redirect("/");
 });
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 80, function(){
   console.log("Searched Queries are:");
 });
