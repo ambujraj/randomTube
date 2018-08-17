@@ -6,14 +6,14 @@
     width: device-width;
 }
 body{
-        background-color: #1c262f;
+        background-image: url('https://cdn.pixabay.com/photo/2015/08/14/20/59/white-painted-concrete-wall-888895_960_720.jpg');
     }
     
     input::placeholder{
         color: white;
     }
 @media screen and (max-width: 320px){
-    iframe {
+    iframe,video {
         width: 83vw;
         height: 48vw;
     }
@@ -43,7 +43,7 @@ body{
     }
 }
 @media screen and (min-width: 321px) and (max-width: 425px){
-    iframe {
+    iframe,video {
     width: 83vw;
     height: 48vw;
     }
@@ -72,7 +72,7 @@ body{
     }
 }
 @media screen and (min-width: 426px) and (max-width: 480px){
-    iframe {
+    iframe,video {
     width: 83vw;
     height: 48vw;
     }
@@ -101,7 +101,7 @@ body{
 }
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
-       iframe {
+    iframe,video {
     width: 43vw;
     height: 24vw;
     }
@@ -145,7 +145,7 @@ body{
         width: 70%;
         padding: 5px 20px;
     }
-    iframe {
+    iframe,video {
         width: 43vw;
         height: 24vw;
     }
@@ -158,4 +158,9 @@ body{
     background-color: #3CBC8D;
     color: white;
     }
+}
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(240, 242, 245, 0), rgba(241, 242, 243, 0.75), rgba(241, 242, 243, 0));
 }
