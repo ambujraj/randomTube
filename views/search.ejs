@@ -54,6 +54,22 @@
     <% }); %>
  </div>
  <hr>
+
+<h2 style="border-left:8px solid grey;padding-left:3px;color:lightcoral;font-family: 'Playfair Display', serif;">Pexels</h2>
+<div class="row">
+    <% resu["videos"].forEach(function(pexel){ %>
+        <% var pexelu = pexel.url; %>
+            <div class="col-md-6">
+                <div class="container">
+                    <video class="embed-responsive-item" preload="meta" poster="<%= pexel.image%>" controls controlsList="nodownload">
+                        <source src="<%= pexelu %>">
+                    </video>
+                    
+                </div>
+            </div>
+            <% }); %>
+</div>
+<hr>
 </div>
 
 <% include partials/footer %>
