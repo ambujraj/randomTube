@@ -6,7 +6,7 @@
     width: device-width;
 }
 body{
-        background-image: url('https://cdn.pixabay.com/photo/2015/08/14/20/59/white-painted-concrete-wall-888895_960_720.jpg');
+        background-image: url('img/bca.jpg');
     }
     
     input::placeholder{
