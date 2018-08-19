@@ -1,7 +1,7 @@
 {
   "name": "randomsearch",
   "version": "1.2.0",
-  "description": "A Search-Engine For YouTube.",
+  "description": "A Search-Engine For Videos.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
