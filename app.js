@@ -28,7 +28,7 @@ app.get("/result", function(req, res){
  Query.create({query: queryy, hits: hit, ip: ip});
     var ab = queryy.split(" ");
     queryy = ab.join("+");
-    var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=14&safeSearch=strict&order=relevance&type=video&q=' + queryy + '+short+film' + '&key=AIzaSyA58s6f45ex23jhsW0m54CpjhD71a4bJgc';
+    var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=14&safeSearch=strict&order=relevance&type=video&q=' + queryy + '+short+film+hindi' + '&key=AIzaSyA58s6f45ex23jhsW0m54CpjhD71a4bJgc';
     // pexelsClient.searchVideos(queryy, 15, 1)
     //     .then(function (result) {
     //         resultt = result;
