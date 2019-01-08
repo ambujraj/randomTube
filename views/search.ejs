@@ -23,7 +23,7 @@
        <% var embed = 'https://www.youtube.com/embed/'+search.id.videoId+'?&amp;theme=dark&amp;color=white&amp;keyboard=1&amp;autohide=1&amp;cc_load_policy=1&amp;modestbranding=1&amp;fs=0&amp;showinfo=0&amp;rel=0'; %>
        <div class="col-md-6">
            <div class="container">
-            <iframe class="embed-responsive-item" src="<%= embed %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="<%= embed %>" allow="autoplay; encrypted-media" frameborder="1" allowfullscreen></iframe>
             <div class="caption">
             <p id="two" style="color: black;"><%=search["snippet"]["title"] %></p>
 
