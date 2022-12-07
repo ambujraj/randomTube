@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/ambujraj/randomTube#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "ejs": "^2.6.1",
-    "express": "^4.16.3",
+    "express": "^4.18.2",
     "ipware": "^1.0.0",
     "mongoose": "^5.2.4",
     "pexels-api-wrapper": "^1.1.1",
